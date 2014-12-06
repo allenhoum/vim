@@ -22,6 +22,7 @@ sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
 echo "正在拷贝vim的插件和配置文件..."
 rm -Rf ~/.vim*
 mkdir ~/.vim
+cat ./vim_data/* > vim_data.tar.gz
 tar -zxvf ./vim_data.tar.gz -C ~/.vim
 cp ./.vimrc ~/
 echo "vim插件和配置文件拷贝完成^_^"
